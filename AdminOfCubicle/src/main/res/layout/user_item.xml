@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginBottom="5sp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/student_image"
+            android:src="@drawable/profile_image"
+            android:layout_height="100sp"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Username"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:id="@+id/student_name"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:id="@+id/student_details"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="userDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

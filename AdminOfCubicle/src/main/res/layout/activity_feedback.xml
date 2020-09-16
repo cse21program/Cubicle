@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/bar_layout"/>
+    <EditText
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
+        android:background="@drawable/inputs"
+        android:padding="10sp"
+        android:hint="Name"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/person"
+        android:layout_marginTop="20sp"
+        android:drawableTint="@color/colorPrimary"
+        android:id="@+id/nameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nameId"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
+        android:background="@drawable/inputs"
+        android:padding="10sp"
+        android:hint="Description"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/description"
+        android:layout_marginTop="10sp"
+        android:drawableTint="@color/colorPrimary"
+        android:id="@+id/descriptionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/sendButtonId"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="20sp"
+        android:text="Send"
+        android:layout_marginRight="150dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionId"/>
+
+
+</RelativeLayout>

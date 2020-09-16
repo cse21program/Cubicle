@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Cubicle</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_closer">Closer Navigation Drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="name_of_clubs">
+        <item>BNCC-Leading University Platoon</item>
+        <item>Leading University Cultural Club</item>
+        <item>Leading University Electronics Club</item>
+        <item>Leading University Model United Nations Association (LUMUNA)</item>
+        <item>Leading University Sports Club</item>
+        <item>Leading University Debating Club</item>
+        <item>LU musical Band (Orpheus)</item>
+        <item>Leading University  Photographic Society</item>
+        <item>Leading University Social Service club</item>
+
+
+    </string-array>
+    <string-array name="mission_of_clubs">
+        <item>The BNCC orgnization have its own motto: KNOWLEDGE,DISCIPLINE and UNITY.
+
+Knowledge: Is defined variously as :
+
+1. Expertise, and skills acquired by a person through experience or education the theoretical or practical understanding of a subject.
+
+2. What is known in a particular field or in total facts and information.
+
+3. Awareness or familiarity gained by experience of a fact or situation.Philosophical debates in general start with Platos formulation of knowledge as"justified true belief".
+
+Not only for the cadets even as a man knowledge acquisition involves complex cognitive processes: perception, learning, communication, association and reasoning. The term knowledge is also used to mean the confident understanding of a subject with the ability to use it for a specific purpose if appropriate.So knowledge is the utmost reflection of the motto of Bangladesh National Cadet Corps(BNCC).
+
+Discipline:
+
+Man lives in society. So he must obey some laws to keep order and maintain peace. Discipline consist in the obeying of this laws. Its necessary from the beginning of a man’s life. A Cadet must be taught to rise early, to attend his lessons regularly to bath properly and to his meals at the right time . He must also be taught to do all things properly. So that he may be good and useful disciplined member of the society. Cadets should have discipline in nature, in the family, in the institutions , in social affairs, in administration, even in the playground. A cadets must obey the Rules , Regulations and all the directives of the organization strictly. No cadet should question to orders of Seniors.
+
+Unity:
+
+Is defined variously as :
+
+The unities of place, time and action gives an in word force to complete any work smoothly.
+
+Unity gives the teachings of "do" or "die" togetherly. At the same time it implies the feelings of the uniform personnel (as like Cadets) to follow the all norms and internal relation at the same way.
+
+There are three type of Cadets in BNCC and divided under two broad heads namely, Senior Division and Junior Division cadets. Senior division again has two categories of female and male cadets of various levels of education.</item>
+
+
+        <item>This club organizes all the cultural events of Leading University.
+</item>
+        <item>Electronics club of Leading University allows the students of university to have a clear idea on different field of Electrical and Electronics Engineering.
+
+Electronics club of Leading University allow the student of university(Modern science) to have a clear idea on different field of electrical and electronics engineering. Anyone who is interested on Electrical field can join this page. Student of University can join this club for practical knowledge.</item>
+
+        <item> It is an educational simulation and academic competition in which students learn about diplomacy, international relations, and the United Nations. MUN involves and teaches research, public speaking, debating, and writing skills, in addition to critical thinking, teamwork, and leadership abilities. Usually an extracurricular activity, some schools also offer Model UN as a class.</item>
+        <item>This club is running successfully by arranging all kinds of sports activities within the students of the University.
+
+Every year this club arrange Annual Sports, Cricket match on 16 December for celebrating The Victory Day and lot more. they arrange a Six-a-side CRICKET tournament and a Super-9 FOOTBALL tournament every year nd also arrange all kinds of indoor games for all male and female students.</item>
+        <item>This club organizes all types of debating competition(parliamentary and traditional) as well as conduct workshop to develop students debating skill.</item>
+        <item>ORPHEUS is committed to establish a good environment and culture of music in LU. So have started a Music School for the students where there will be a chance to learn musical instruments.</item>
+        <item>Leading University Photographic Society is the home for the enthusiastic learners of photography.</item>
+        <item>to serve humanity.</item>
+
+    </string-array>
+    <string-array name="founded_of_clubs">
+        <item>6 April 2013</item>
+        <item>-------</item>
+        <item>-------</item>
+        <item>-------</item>
+        <item>Founded in 2003</item>
+        <item>-------</item>
+        <item>Founded in 2008</item>
+        <item>Founded  in August 2012</item>
+        <item>-------</item>
+
+
+    </string-array>
+    <string-array name="email_of_clubs">
+        <item>----------</item>
+        <item>---------</item>
+        <item>---------</item>
+        <item>lumona3100bd@gmail.com</item>
+        <item>---------</item>
+        <item>luscofficial.2003@gmail.com</item>
+        <item>orpheus.lu.syl@gmail.com</item>
+        <item>---------</item>
+        <item>----------</item>
+
+
+    </string-array>
+    <string-array name="website_of_clubs">
+        <item>m.me/bncc.lu</item>
+        <item>m.me/culturalcluboflu</item>
+        <item>http://www.lu-ec.org//</item>
+        <item>https://lumuna.blogspot.com</item>
+        <item>m.me/131526620215103</item>
+        <item> m.me/LeadingUnniversityDebatingClub</item>
+        <item>https://m.me/orpheus.lu</item>
+        <item>m.me/lu.photographicsociety</item>
+        <item>http:?//lussc.org//</item>
+
+
+    </string-array>
+    <string-array name="phone_numbers_of_clubs">
+        <item>+8801736052893</item>
+        <item>--------</item>
+        <item>--------</item>
+        <item>+8801710343956</item>
+        <item>+8801777505902</item>
+        <item>--------</item>
+        <item>--------</item>
+        <item>+8801766863686</item>
+        <item>+8801752303390</item>
+
+
+    </string-array>
+</resources>

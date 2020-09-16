@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/club_image"
+                android:layout_width="64sp"
+                android:id="@+id/poster_profile_picture"
+                android:layout_height="64dp"/>
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="Club Nam"
+                    android:id="@+id/poster_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/post_timeAndDate"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:text="4:34 pm  25 april 2020"
+                    android:layout_below="@id/post_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/moreActivity"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:orientation="vertical"
+            android:layout_below="@id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:autoLink="all"
+                android:layout_marginRight="10dp"
+                android:text="Hellow our all  members of club .are you ready for  our event
+ please come our event in right time."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                 />
+            <TextView
+                android:id="@+id/whoRegisteredEvent"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:text="See who register with"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="30dp"
+                android:textColor="@android:color/black"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:text="Event Name"
+                android:layout_marginTop="10dp"
+                android:padding="40dp"
+                android:visibility="gone"
+                android:id="@+id/event_name2"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:id="@+id/post_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/layout"
+                android:layout_width="270sp"
+                android:layout_height="220dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_below="@id/layout1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="4"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_marginLeft="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <ImageView
+                    android:id="@+id/post_likes"
+                    android:src="@drawable/like"
+                    android:layout_width="wrap_content"
+                    android:text="Like"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/likes_number"
+                    android:textColor="@android:color/black"
+                    android:text="0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:layout_toRightOf="@id/likes_number"
+                    android:id="@+id/post_comments"
+                    android:text="Comments"
+                    android:src="@drawable/comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_toRightOf="@id/post_comments"
+                    android:id="@+id/comments_number"
+                    android:textColor="@android:color/black"
+                    android:text="0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

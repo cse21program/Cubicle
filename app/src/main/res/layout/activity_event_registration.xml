@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventRegistrationActivity">
+
+    <TextView
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/eventDetails"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/studentId"
+        android:textAlignment="center"
+        android:hint="Student Id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:background="@drawable/inputs"
+        android:layout_below="@id/eventDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:hint="phone"
+        android:inputType="phone"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:padding="10dp"
+        android:id="@+id/studentPhone"
+        android:background="@drawable/inputs"
+        android:layout_below="@id/studentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:hint="email"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:padding="10dp"
+        android:id="@+id/student_email"
+        android:background="@drawable/inputs"
+        android:layout_below="@id/studentPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:text="Register"
+        android:id="@+id/RegisterBtn"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/buttons"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/student_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

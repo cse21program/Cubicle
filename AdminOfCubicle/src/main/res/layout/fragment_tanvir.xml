@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            tools:context=".Fragment.FramgeOfDevelopers.TanvirFragment">
+
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/imageView"
+                        android:layout_width="250sp"
+                        android:layout_height="300sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/tanvir" />
+
+                    <TextView
+                android:layout_below="@id/imageView"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:text="Mahdi Hossan Tanvir\n46th Batch\nDepartment of CSE\nLeading University,Sylhet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+
+
+</RelativeLayout>

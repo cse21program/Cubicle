@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:id="@+id/profile_imageId"
+        android:src="@drawable/profile_image"
+        android:layout_height="50dp"/>
+    <TextView
+        android:text="Rezaul Karim"
+        android:layout_toEndOf="@id/profile_imageId"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/usernameId"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_imageId" />
+
+</RelativeLayout>

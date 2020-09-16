@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:src="@drawable/club_image"
+            android:layout_height="50dp"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="Club Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:drawableLeft="@drawable/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Excl-Average,chart etc.Typing Skill.Email Writing.Photo Shop.Website Building .Sell Something Skill
+"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20sp"
+            android:text="12:47 PM 28 04,2020"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="1dp"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="7sp"
+            android:id="@+id/layout"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/profile_image"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/commentor_profile_picture"
+                android:layout_width="30sp"
+                android:layout_height="30sp"/>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/commentor_name"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:textColor="@android:color/black"
+                    android:text="Commentor Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="10dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/comment_timeAndDate"
+                    android:text="3:41 am  4 May 2020"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:text="This is comment session ,Write your comment here"
+            android:layout_marginLeft="15sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/commentline"
+            android:layout_below="@id/layout"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"/>
+    <View
+        android:layout_below="@id/commentline"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"/>
+
+
+
+</RelativeLayout>

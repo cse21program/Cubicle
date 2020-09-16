@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F6F4F4"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+   <androidx.appcompat.widget.Toolbar
+       android:background="@color/colorPrimary"
+       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+       app:popupTheme="@style/MenuStyle"
+       android:id="@+id/messageToolBar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="35sp"
+           android:id="@+id/toolbarProfile"
+           android:src="@drawable/profile_image"
+           android:layout_height="35dp"/>
+       <TextView
+           android:textStyle="bold"
+           android:textColor="@android:color/white"
+           android:textSize="16sp"
+           android:text="Name"
+           android:id="@+id/tool_barName"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+   </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@id/messageToolBar"
+            android:layout_above="@id/layout"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/messageRecyclerview"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:paddingTop="5sp"
+        android:id="@+id/layout"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+        <EditText
+            android:id="@+id/MessageInputET"
+            android:hint="Write message"
+            android:padding="10sp"
+            android:background="@drawable/editextinput"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:layout_marginLeft="5sp"
+            android:padding="10sp"
+            android:id="@+id/sendMessageBtn"
+            android:background="@drawable/buttons"
+            android:src="@drawable/comments_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

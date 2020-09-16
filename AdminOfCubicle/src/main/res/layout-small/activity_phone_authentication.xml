@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".PhoneAuthenticationActivity">
+   <ImageView
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/caption"
+       android:layout_marginBottom="3dp"
+       android:id="@+id/textDemo1"
+       android:layout_marginTop="1dp"
+       android:layout_width="match_parent"
+       android:layout_height="70dp"/>
+    <RelativeLayout
+        android:id="@+id/phoneAuth"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/textDemo1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="7sp"
+                android:layout_marginBottom="5sp"
+                android:text="Phone Number:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+
+                android:background="@drawable/inputs"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.hbb20.CountryCodePicker
+                    app:ccp_contentColor="@android:color/primary_text_light_nodisable"
+                    app:ccp_defaultNameCode="bd"
+                    android:id="@+id/ccp"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/phoneText"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:textSize="10sp"
+                    android:hint="Phone number"
+                    android:textColorHint="@android:color/black"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+<EditText
+    android:hint="Write your code here"
+    android:layout_marginTop="1sp"
+    android:padding="7sp"
+    android:layout_below="@id/phoneAuth"
+    android:background="@drawable/inputs"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:id="@+id/codeText"
+    android:textSize="10dp"
+    android:inputType="number"
+    android:visibility="gone"
+    android:textAlignment="center"
+    android:textColorHint="@android:color/black"
+    android:textColor="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <Button
+
+        android:textColor="@android:color/white"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/codeText"
+        android:text="Continue"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:layout_width="80sp"
+        android:id="@+id/continueNextButton"
+        android:layout_height="20sp"/>
+
+</RelativeLayout>

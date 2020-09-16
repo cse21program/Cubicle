@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <RelativeLayout
+            android:id="@+id/firstActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:layout_margin="10dp"
+                android:src="@drawable/cover_image"
+                android:id="@+id/Cover_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100sp"
+                android:layout_marginLeft="15sp"
+                android:layout_height="100dp"
+                android:id="@+id/Profile_imageView"
+                android:layout_marginTop="200dp"
+                android:src="@drawable/club_image" />
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/SecondActivity"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/firstActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/profile_name"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Leading University Computer Club"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:id="@+id/thirtActivity"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/SecondActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+
+                android:textColor="@android:color/black"
+                android:text="Posts"
+                android:id="@+id/postid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+
+                android:textColor="@android:color/black"
+                android:text="About"
+                android:id="@+id/aboutId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/postid" />
+            <Button
+                android:textColor="@android:color/black"
+                android:text="Events"
+                android:id="@+id/EventsId"
+                android:layout_toRightOf="@id/aboutId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_toRightOf="@id/EventsId"
+                android:textColor="@android:color/black"
+                android:text="Photos"
+                android:id="@+id/photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/thirtActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <fragment
+                android:name="com.example.adminofcubicle.Fragment.FramgeOfDevelopers.BlankFragment"
+                android:id="@+id/fragmentId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventsMangeActivity">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/highlight"
+        android:text="Full fill up All option is mandatory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp"
+        android:padding="6dp"
+        android:background="@drawable/inputs"
+        android:textAlignment="center"
+        android:hint="Event Name"
+        android:id="@+id/event_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40sp"
+        android:layout_marginLeft="40sp"
+        android:layout_below="@id/highlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:padding="6sp"
+        android:background="@drawable/inputs"
+        android:textAlignment="center"
+        android:hint="Event Description"
+        android:layout_marginTop="7dp"
+        android:id="@+id/event_description"
+        android:layout_marginRight="40sp"
+        android:layout_marginLeft="40sp"
+        android:layout_below="@id/event_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_marginTop="10sp"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/buttons"
+        android:text="Create Event"
+        android:textStyle="bold"
+        android:id="@+id/eventCreateBtn"
+        android:textSize="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/event_description"
+        android:layout_width="120sp"
+        android:layout_height="25sp"/>
+
+</RelativeLayout>

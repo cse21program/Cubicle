@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FragmentOfProfile.PostsFragment">
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="15sp"
+        android:layout_marginRight="10sp"
+        android:id="@+id/Post_ET"
+        android:hint="Enter your post"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"/>
+    <ImageView
+        android:id="@+id/imagePostBtn"
+        android:layout_marginLeft="20sp"
+        android:src="@drawable/select_image"
+        android:layout_below="@id/Post_ET"
+        android:layout_width="64dp"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:layout_marginRight="10dp"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:text="Post"
+        android:id="@+id/postBtn"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/Post_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/place_of_image"
+        android:layout_below="@id/postBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postsRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_below="@id/place_of_image"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

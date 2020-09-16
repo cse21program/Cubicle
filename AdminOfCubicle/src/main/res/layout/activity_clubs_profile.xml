@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClubsProfileActivity">
+    <include
+        android:id="@+id/clubsProfileToolbar"
+        layout="@layout/bar_layout"/>
+
+    <ScrollView
+        android:layout_below="@id/clubsProfileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:src="@drawable/cover_image"
+                android:id="@+id/club_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="250sp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@id/club_cover_image"
+                android:layout_width="70sp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/club_image"
+                android:id="@+id/club_profile_image"
+                android:layout_height="70dp"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textStyle="bold|italic"
+                android:text="Name Of Club"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/club_name"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/club_profile_image"
+                android:gravity="center_horizontal"
+                tools:ignore="RtlCompat" />
+
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/club_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mission_card_1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:text="Mission:"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/MissionTextView"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/mission"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:gravity="center_horizontal"
+                        />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_below="@id/mission_card_1"
+                    android:id="@+id/mission_card_2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="Give basic idea of computer .programming and many more Represent our university and department throuhout the whole country with the help of computer related events or program         "
+                        android:id="@+id/club_mission"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/phone_card"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/mission_card_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:autoLink="phone"
+                        android:textSize="20sp"
+                        android:visibility="gone"
+                        android:textAlignment="center"
+                        android:text="+8801729358489"
+                        android:id="@+id/club_phone"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/call"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:gravity="center_horizontal" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/email_card"
+                    android:layout_below="@id/phone_card"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/club_email"
+                        android:textSize="20sp"
+                        android:visibility="gone"
+                        android:textAlignment="center"
+                        android:text="cubicle@gmail.com"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:autoLink="email"
+                        android:gravity="center_horizontal" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Web_card"
+                    android:layout_below="@id/email_card"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:visibility="gone"
+                        android:autoLink="web"
+                        android:id="@+id/club_web"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:text="http://lucomputer.org//"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/webbsite"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:gravity="center_horizontal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/founded_card1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@id/Web_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:text="Founded:"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/founded"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:gravity="center_horizontal"
+                        />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/founded_card2"
+                    android:layout_below="@id/founded_card1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:id="@+id/club_founded"
+                        android:textAlignment="center"
+                        android:text="9th February 2013"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:gravity="center_horizontal" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

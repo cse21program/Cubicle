@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F6F4F4"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:popupTheme="@style/MenuStyle"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:id="@+id/messageToolBar"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35sp"
+            android:id="@+id/tool_barProfile"
+            android:src="@drawable/profile_image"
+            android:layout_height="35dp"/>
+        <TextView
+            android:id="@+id/tool_barName"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MessageRecyclerView"
+        android:layout_below="@id/messageToolBar"
+        android:layout_width="match_parent"
+        android:layout_above="@id/layout"
+        android:layout_marginBottom="10sp"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout"
+        android:layout_marginBottom="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="Write Message"
+            android:padding="10sp"
+            android:id="@+id/messageInputET"
+            android:background="@drawable/comment_backgrounp"
+            android:layout_width="280sp"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/buttons"
+            android:padding="10sp"
+            android:id="@+id/MessageSentBtn"
+            android:src="@drawable/comments_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

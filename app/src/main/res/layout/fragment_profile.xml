@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/first_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/profile_image"
+            android:layout_width="250sp"
+            android:id="@+id/profile_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_height="250dp"/>
+        <TextView
+            android:layout_below="@id/profile_image"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:text="Name"
+            android:textStyle="italic"
+            android:id="@+id/user_name"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_marginTop="10sp"
+            android:layout_below="@id/user_name"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:text="Batch"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:id="@+id/user_batch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:text="Department"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:id="@+id/user_department"
+            android:layout_below="@+id/user_batch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_below="@id/user_department"
+            android:id="@+id/user_university"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:text="University"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:id="@+id/second_cardview"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/first_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/black"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:hint="Name"
+            android:id="@+id/profile_name"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="2dp"
+        android:id="@+id/studentId_cardview"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/second_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/black"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:hint="Student ID"
+            android:id="@+id/Student_Id"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/student_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/studentId_cardview"
+        android:id="@+id/third_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:autoLink="phone"
+            android:textColor="@android:color/black"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:id="@+id/phone_number"
+            android:hint="Phone number..."
+            android:drawableLeft="@drawable/call"
+            android:padding="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/third_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/black"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:hint="Email..."
+            android:padding="10sp"
+            android:id="@+id/email_ID"
+            android:autoLink="email"
+            android:drawableLeft="@drawable/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
